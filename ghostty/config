@@ -1,0 +1,11 @@
+# terminal size
+window-width = 180
+window-height = 70
+
+# don't hang around
+quit-after-last-window-closed = true
+
+# fixes issues with Ctrl-R
+term = xterm-256color
+
+theme = Catppuccin Frappe
