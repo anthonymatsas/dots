@@ -5,7 +5,7 @@ window-height = 70
 # don't hang around
 quit-after-last-window-closed = true
 
-# fixes issues with Ctrl-R
 term = xterm-256color
+keybind = backspace=text:\x08
 
 theme = Catppuccin Frappe

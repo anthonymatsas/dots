@@ -1,0 +1,51 @@
+" Simplified version of local vimrc for remote machines
+
+scriptencoding utf-8
+set encoding=utf-8
+
+filetype plugin indent on
+
+if has("patch-7.4.710")
+	set listchars=space:-,trail:~
+else
+	set listchars=trail:~
+endif
+
+syntax on
+set number
+"set relativenumber
+set list
+set complete=i
+"command line completion
+set wildmenu
+set backspace=indent,eol,start
+set autoindent
+set smarttab
+
+"Theme
+set t_Co=256
+
+"diff coloscheme
+if &diff
+	syntax off
+	colorscheme elflord
+endif
+
+"Override colors
+highlight SpecialKey ctermfg=darkgrey guifg=grey70
+highlight NonText ctermfg=darkgrey guifg=grey70
+highlight LineNr ctermfg=darkgrey guifg=grey70
+highlight Search cterm=NONE ctermfg=black ctermbg=yellow
+highlight Folded ctermbg=black
+
+"Mappings
+imap jj <ESC>
+
+"Templates
+"if has("autocmd")
+"       augroup templates
+"               autocmd BufNewFile *.sh 0r~/.vim/vimtemplates/shbang.sh
+"               autocmd BufNewFile *.php 0r~/.vim/vimtemplates/view.php
+"               autocmd BufNewFile *.js 0r~/.vim/vimtemplates/widget.js
+"       augroup END
+"endif
