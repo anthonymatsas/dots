@@ -2,16 +2,6 @@
 
 My personal configuration files.
 
-## Structure
-```
-.
-├── ghostty/          # ghostty config 
-├── iterm2/           # iterm2 configs 
-├── nvim/             # Vim/Neovim configs 
-├── tmux/             # Terminal multiplexer
-└── ...               # Other tools as needed
-```
-
 ## Installation
 
 Clone the repository:
